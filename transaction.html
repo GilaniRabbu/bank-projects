@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <title>Trust Bank</title>
+</head>
+
+<body>
+  <header class="text-center pt-5 px-1">
+    <h1 class="display-5 fw-bold">
+      Transaction Details of <span class="text-primary">Owner</span>
+    </h1>
+  </header>
+  <main class="mx-auto py-4">
+    <section class="d-flex justify-content-center gap-2 container mx-auto res-wrap">
+      <div class="col-md-4 p-5 bg-1 text-dark rounded-1 bottom-gap">
+        <h2 class="h3">Deposit</h2>
+        <h3 class="h1">$<span id="total-deposit">00</span></h3>
+      </div>
+      <div class="col-md-4 p-5 bg-2 text-dark rounded-1 bottom-gap">
+        <h2 class="h3">Withdraw</h2>
+        <h3 class="h1">$<span id="total-withdraw">00</span></h3>
+      </div>
+      <div class="col-md-4 p-5 bg-3 text-dark rounded-1">
+        <h2 class="h3">Balance</h2>
+        <h3 class="h1">$<span id="total-balance">1000</span></h3>
+      </div>
+    </section>
+    <section class="pt-4 container">
+      <div class="d-flex justify-content-center gap-2 res-wrap">
+        <div class="col-md-6 bg-4 p-4 rounded-1 bottom-gap">
+          <p class="h3 mb-3">Deposit Money</p>
+          <input id="deposit-input" type="text" class="form-control mb-3 border border-0 rounded-0" placeholder="Enter Amount">
+          <button id="deposit-button" class="btn btn-warning rounded-0">Deposit</button>
+        </div>
+        <div class="col-md-6 bg-5 p-4 rounded-1">
+          <p class="h3 mb-3">Withdraw Money</p>
+          <input id="withdraw-input" type="text" class="form-control mb-3 border border-0 rounded-0" placeholder="Enter Amount">
+          <button id="withdraw-button" class="btn btn-warning rounded-0">Withdraw</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="transaction.js"></script>
+</body>
+
+</html>
